@@ -14,22 +14,80 @@
 
 ## Général
 1.  Quel est l’environnement à installer pour exécuter un script PHP ? Citer 2 exemples de logiciels permettant ce contexte
+    - Pour exécuter un script PHP, il est nécessaire d’avoir un serveur PHP. Laragon et Xammp sont des logiciels permettant ceci.
+
 2.  Qu’est-ce qu’un algorithme ?
+    - Un algorithme est une suite logique d’instructions permettant d’atteindre un résultat à partir d’un objectif donné.
+
 3.  Qu’est-ce qu’une variable ? Par quel symbole est préfixée une variable en PHP ?
+    - Une variable est un stockage permettant de garder une donnée en mémoire dans un algorithme. Il faut premièrement la déclarer (initialiser), puis lui attribuer une valeur, qui peut être changée plusieurs fois au cours de l’algorithme. A chaque attribution,        sa valeur précédente est écrasée.
+
 4.  Qu’est-ce que la portée d’une variable ?
+    - La portée d’une variable désigne la portion du code dans laquelle elle est accessible. 
+
 5.  Qu’est-ce qu’une constante ? Quelle est la différence avec une variable ?
+    - Une constante est un stockage de donnée dans un algorithme qui est fixe, on ne peut pas changer sa valeur une fois qu’elle est déclarée.
+
 6.  Qu’est-ce qu’une superglobale, combien en existent-ils et donner un exemple d’utilisation
+    - Ce sont des variables internes qui sont toujours disponibles dans un programme. $GLOBALS, $_SERVER, $_GET, $_POST, $_FILES, $_COOKIE, $_SESSION, $_REQUEST, $_ENV 
+    
 7.  Quels sont les différents types (primitifs) que l’on peut associer à une variable en PHP ? Les citer et en donner des exemples (ne pas oublier le type d’une variable sans valeur)
+    - null : type à valeur unique, c’est souvent un type attribué par défaut sur une var indéfinie. 
+
+    - bool : type booléen, dont la valeur est soit true soit false. 
+    
+    - int : type nombre entier. 
+    
+    - float (floating-point number) : type nombre décimal, inclue float, double & real numbers. 
+    
+    - string : type chaine de caractère. 
+    
+    - array : type tableau. 
+    
+    - object : type objet, appartenant à une classe. 
+    
+    - callable : type appel de fonction/méthode. 
+    
+    - resource : type spécial faisant référence à une ressource interne.     
+
 8.  Existe-t-il plusieurs types de tableaux en PHP, si oui lesquels ?
+    - Il existe deux types de tableaux : les tableaux indexés, ou simples, qui associent une valeur à un index qui commence à 0, et les tableaux associatifs qui associent une valeur à une clé. 
+
+    - Ex : FR -> bonjour, ENG -> hello 
+
 9.  Quelles sont les différentes structures de contrôles qu’il existe en algorithmie ? Donner un exemple pour chacune d’entre elles
+    - F, ELSE (SI, SINON) : structure de condition qui donne deux instructions alternatives. 
+    - ESLEIF (SINON SI) : ajout au SI, SINON qui permet d’imbriquer plus de conditions. 
+    - FOR (POUR) : boucle iterative permettant d’exécuter une tache autant de fois que prévu. 
+    - WHILE (TANTQUE) : boucle permettant d’exécuter une tache tant que sa condition est remplie. Cela signifie qu’elle peut s’exécuter sans fin si la condition reste vraie. 
+    - DO UNTIL (JUSQU’A) : boucle permettant d’exécuter une tache jusqu’à ce que la condition soit remplie. 
+
 10. Quelle est la fonction PHP permettant de demander la longueur d’une chaîne de caractères ?
+    - Il s’agit de la fonction strlen($chaine); 
+
 11. Qu’est-ce qu’une session ? Quelle fonction permet de démarrer une session en PHP ? Donner un exemple d’utilisation en PHP
+    - Une session est une méthode de stockage de données spécifiques à un utilisateur. On utilise alors un ID de session envoyé au navigateur via cookie. Pour démarrer une session en PHP, on utilise la fonction session_start();     
+
 12. Qu’est-ce qu’un cookie ? Donner un exemple d’utilisation en PHP
+    - Un cookie est un paquet de données communiquée entre le serveur et le client HTTP. Ils servent à créer et maintenir des sessions.
+ 
 13. Quelle est la différence entre les instructions « require » et « include » en PHP
+    - Elles font la même chose, mais impose une condition différente : si le fichier requis n’est pas présent, require retourne une fatal error, tandis que include renvoie un avertissement.
+
 14. Comment effectuer une redirection en PHP ?
+    - Une redirection en PHP se fait avec la fonction header(), qui prends en paramètre Location: suivi de l’url de la page vers laquelle on veut rediriger. 
+
 15. Définir la partie « front-end » et « back-end » d’une application
+    - Le front-end correspond à la partie visible à l’utilisateur : design, intégration, UI, UX.
+
+    - Le back-end correspond à la partie "arrière" du site : les traitements de données, l’automatisation, la BDD ... etc. 
+
 16. Définir le contrôle de version ? Qu’est-ce que Git ?
+    - Le contrôle de version, ou versioning est une méthode de transfert et de stockage de fichiers non destructif, qui permet de garder plusieurs versions d’un projet, ainsi que d’avoir plusieurs branches de développement en parallèle, et de les fusionner au          besoin. Git est la méthode de versioning la plus utilisée aujourd’hui.
+
 17. Qu’est-ce qu’un CMS ? Citer au moins 2 exemples
+    - Un CMS (content management system) ou SGC (système de gestion de contenu) est un logiciel, souvent en ligne, qui permet de créer et gérer un site web en utilisant uniquement l’IDE (integrated developpement interface).
+    - Deux CMS populaires sont Wordpress (pour une utilisation générale) et Magento (pour le développement de site commerciaux).
 
 ## Front-end
 18. Définir HTML
