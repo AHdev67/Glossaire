@@ -209,12 +209,16 @@
     - Etendre une classe emploie le concept d’héritage. Cela veut dire qu’on créer une hiérarchie de classe, entre une classe parent et une ou plusieurs classes filles. 
 
 52. Définir l’opérateur de résolution de portée
+	- L'opérateur de résolution de portée :: permet d'accéder à une constante, propriété statique ou méthode statique d'une classe ou de sa classe parent.
 
 53. Définir une méthode / propriété statique
+	- Une méthode ou propriété statique peut être appelée sans instancier la classe auxquels ils appartiennent.
 
 54. Définir le polymorphisme en POO
+	- Le polymorphisme est un concept visant à créer des methodes et fonctions hautement réutilisables qui s'adaptent en fonction des objets qui les appellent. Cela se fait grace à des classes abstraites et/ou des interfaces.
 
 55. Définir une méthode / classe abstraite ?
+	- Une classe abstraite est une classe qui ne peut pas être instanciée, son but étant d'être heritée par une classe contcrète. Une méthode abstraite ne peut être déclarée que dans une classe abstraite, et ne définie pas son implémentation.
 
 56. Définir le chaînage de méthodes
     - Le chaînage de méthodes correspond à appeler une méthode d'une classe parant dans une autre méthode d'une classe fille.
@@ -234,12 +238,30 @@
 
 ## Architecture 
 60. Qu’est-ce que l’architecture client / serveur ? Grâce à quel type de requête peut-on interroger le serveur. Définir l’acronyme de ce type de requête. Si on ajoute un « S » à cet acronyme, expliquer la différence
+	- L'architecture client / serveur désigne un mode de transfert de données entre un "client" (le navigateur) qui va envoyer des requêtes, et un serveur qui va les recevoir et y répondre. Cette communication se fait via des requêtes HTTP, ou Hyper Text Transfer Protocol. HTTPS est la version sécurisée (d'où le S) et va encrypter les requêtes HTTP émises par le client. Elle validera aussi un certificat d'authenticité fourni par le site.
+
 61. Donner la définition d’un design pattern. Citer au moins 3 exemples de design pattern
+	- Un design pattern, ou patron de conception, est un modèle d'arrengement de fichiers et de modules permettant de répondre à un besoin général lors du développement d'un logiciel/application.
+
 62. Qu’est-ce que l’architecture MVC ?
+	- L'architecture MVC consiste à organiser le code de l'application en 3 parties : le modèle, les vues et les controlleurs. C'est à dire, classifier le code qui s'occupera de la connexion, de l'affichage et de la logique.
+
 63. Quel est le rôle de chaque couche du design pattern MVC : Model, View, Controller ?
+	- le modèle contient les données, ou plus souvent la methode de connexion à la bdd
+	- le controlleur contient toutes les instructions logiques liées au traitement des données
+	- la vue contient toutes les pages d'affichage du site
+
 64. Quels sont les avantages de l’architecture MVC ?
+	- MVC permet d'organiser son code de façon plus lisible et facilite donc la maintenance. C'est particulièrement pertinant pour un site web qui peut être voué à un service prolongé, qui demandera donc de nombreuses interventions et souvent par des devs différents.	
+
 65. Existe-t-il des variantes à l’architecture MVC ?
+	- Il existe les patrons MVP et MVVM :
+	- MVP diffère en remplacent le controlleur par la présentation, et change la dyamique avec la vue. La vue gère des évenements qu'elle transmet en traitement à la présentation.
+	- MVVM, ou modèle-vue vue-modèle instaure une communication bidirectionnelle entre la vue et le modèle.
+
 66. Qu’est-ce qu’une API ? Définir l’architecture REST
+	- Une API (application programming interface, ou interface de programmation) est un "programme" (entendre : ensemble de classes, méthodes, fonctions et constantes) qui à pour but d'offire un service à un autre programme.
+	- L'architecture REST (REpresentational State Transfer) est un ensemble de conventions (et pas réelement une tech en soi). Ses 5 règles sont : utiliser l'URI (passé dans l'URL) comme identifiant des ressources, utiliser les verbes HTTP (POST, GET) comme identifiant des operations, utiliser les réponses HTTP comme représentation des ressources, utiliser des liens comme relation entre ressources et utiliser un paramètre comme jeton d’authentification.
 
 ## Modélisation - Base de données
 67. Qu’est-ce que la modélisation de données ? Définir la méthode Merise
@@ -249,7 +271,11 @@
     c.  Création, modification et suppression
 69. Qu’est-ce qu’un modèle conceptuel de données (MCD) en Merise ?
 70. Qu’est-ce qu’un modèle logique de données (MLD) en Merise ?
-71. Donner la définition des mots suivants :a.  Entitéb.  Relationc.  Cardinalitéd.  Clé primaire / clé étrangère
+71. Donner la définition des mots suivants :
+	a.  Entité
+	b.  Relation
+	c.  Cardinalité
+	d.  Clé primaire / clé étrangère
 72. Que devient une relation de type « Many To Many » dans le modèle logique de données ?
 73. Qu’est-ce qu’une base de données ?
 74. Définir les notions suivantes :
