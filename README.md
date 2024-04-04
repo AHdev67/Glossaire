@@ -20,7 +20,7 @@
     - Un algorithme est une suite logique d’instructions permettant d’atteindre un résultat à partir d’un objectif donné.
 
 3.  Qu’est-ce qu’une variable ? Par quel symbole est préfixée une variable en PHP ?
-    - Une variable est un stockage permettant de garder une donnée en mémoire dans un algorithme. Il faut premièrement la déclarer (initialiser), puis lui attribuer une valeur, qui peut être changée plusieurs fois au cours de l’algorithme. A chaque attribution,        sa valeur précédente est écrasée.
+    - Une variable est un stockage permettant de garder une donnée en mémoire dans un algorithme. Il faut premièrement la déclarer (initialiser), puis lui attribuer une valeur, qui peut être changée plusieurs fois au cours de l’algorithme. A chaque attribution, sa valeur précédente est écrasée.
 
 4.  Qu’est-ce que la portée d’une variable ?
     - La portée d’une variable désigne la portion du code dans laquelle elle est accessible. 
@@ -83,7 +83,7 @@
     - Le back-end correspond à la partie "arrière" du site : les traitements de données, l’automatisation, la BDD ... etc. 
 
 16. Définir le contrôle de version ? Qu’est-ce que Git ?
-    - Le contrôle de version, ou versioning est une méthode de transfert et de stockage de fichiers non destructif, qui permet de garder plusieurs versions d’un projet, ainsi que d’avoir plusieurs branches de développement en parallèle, et de les fusionner au          besoin. Git est la méthode de versioning la plus utilisée aujourd’hui.
+    - Le contrôle de version, ou versioning est une méthode de transfert et de stockage de fichiers non destructif, qui permet de garder plusieurs versions d’un projet, ainsi que d’avoir plusieurs branches de développement en parallèle, et de les fusionner au besoin. Git est la méthode de versioning la plus utilisée aujourd’hui.
 
 17. Qu’est-ce qu’un CMS ? Citer au moins 2 exemples
     - Un CMS (content management system) ou SGC (système de gestion de contenu) est un logiciel, souvent en ligne, qui permet de créer et gérer un site web en utilisant uniquement l’IDE (integrated developpement interface).
@@ -91,51 +91,156 @@
 
 ## Front-end
 18. Définir HTML
+    - HTML, pour HyperText Markup Language, est un langage de balisage servant à structurer une page web. Il s’agit d’une structure sémantique, et ne comprends pas la mise en page.
+
 19. Définir CSS
+    - CSS, pour Cascade Style Sheet, est un langage web complémentaire au HTML qui sert lui à gérer le style d’une page. On utilise un sélecteur, auquel on passe des propriétés à qui on donne des valeurs. 
+    - Ex : on passe à tous les éléments contenus dans une balise <p> la propriété “color : red;”, ce qui rendra le texte rouge. 
+
 20. Définir Javascript
+    - JavaScript est un langage de script orienté objet et est utilisé dans la plupart des cas à ajouter des éléments de logique algorithmique dans une page HTML. 
+
 21. Définir JSON. Dans quel contexte ce format est-il utilisé ?
+    - JSON (JavaScript Object Notation) est un format de donnée textuel.
+
 22. Peut-on interpréter du Javascript côté serveur ? Si oui, comment ?
+    - On ne peut pas le faire avec JS native, cependant Node.js permet l’exécution de JavaScript coté serveur dans le contexte de son environnement.
+
 23. Qu’est-ce qu’un sélecteur CSS ?
+    - Un sélecteur CSS correspond à l’élément que l’on va affecter avec des propriétés. Il peut s’agir d’une balise en général, d’une classe (qui regroupera tous les éléments appartenant à cette classe) ou d’un ID (qui ne fera référence qu’a l’élément qui porte cet ID unique). 
+
 24. Quelle balise HTML permet de créer un lien hypertexte ?
+    - Il s’agit de la balise anchor, qui s’écrit <a href= “url”> texte auquel on applique le lien</a>.
+
 25. Qu’est-ce qu’une requête AJAX ?
+    - 
+
 26. Quel sélecteur CSS permet de sélectionner tous les éléments d’une classe spécifique ? D’un identifiant spécifique ?
+    - Pour une classe, on utilise le selecteur ‘.’ 
+	- Pour un ID, on utilise le selecteur ‘#’ 
+
 27. Définir le responsive design
+    - Le responsive design correspond au développement d’un front end qui s’adapte au mieux pour supporter un maximum d’appareils, mais aussi d’utilisateurs qui peuvent avoir des 	besoins spécifiques (handicap, ...etc) 
+
 28. Qu’est-ce que le templating ?
+    - Le templating consiste à créer un fichier php “squelette” qui contiendra la structure statique 	de la page affichée (header, footer, wrapper) dans laquelle on insèrera une variable content, qui sera récupérée dans les autres fichiers de l’appli web via output buffer. Finalement, le template est appelé dans ces autres fichier avec un require. 
+
 29. Qu’est-ce qu’une fonction anonyme en Javascript ?
+    - 
+
 30. Quelle méthode JavaScript est utilisée pour ajouter un élément à la fin d'un tableau ?
+    - Il s’agit de la méthode Array.push(element).
+
 31. Qu’est-ce qu’un « media query » ?
+    - Un media query est une condition qui spécifie des dimensions d’affichage, et applique des propriétés uniquement lorsqu’un utilisateur rentre dans ce cas de figure. 
+
 32. Qu’est-ce qu’un pseudo élément en CSS ?
+    - Un pseudo élément est un mot clé ajouté à un élément et permet de cibler une partie spécifique, ou un contexte spécifique de l’élément. On lie un élément et un pseudo-élément par “::”, sans espaces. 
+
 33. Qu’est-ce que Bootstrap ? Donner d’autres exemples équivalent
+    - Bootstrap est une librairie CSS & JS. C’est un des outils de développement frontend les plus populaires, et permet de mettre en page un site en très peu de temps. 
+
 34. Quand un formulaire HTML est créé, quelles sont les 2 méthodes qui peuvent lui être associées ? Donner la différence entre ces 2 méthodes
+    - Ce sont les methodes GET et POST, la différence étant que GET envoie les données dans l'URL tandis que POST l'envoie directement au serveur.
 
 ## UX UI
 35. Quelle est la différence entre UX Design et UI Design ?
+    - Le UX (user experience) design consiste à concevoir l’expérience utilisateur, c’est à dire l’ergonomie du site, l’intuitivité des fonctions, mais aussi l’inclusivité sous tous ses aspects. 
+
+    - Le UI (user interface) design consiste à concevoir l’interface de l’appli, donc en respect avec le UX design, et va développer l’aspect visuel de l’ergonomie et l’accessibilité du site. 
+
 36. Qu’est-ce qu’un wireframe ?
+    - Un wireframe est une maquette conceptuelle du site, qui va mettre en place l’organisation visuelle de la page (dimensionner les éléments, ajuster les polices). 
+
 37. Qu’est-ce qu’un prototype ?
+    - Un prototype, ou mockup, est une maquette complète, simulant entièrement la présentation visuelle du site, que ce soit les plages de couleurs, les polices custom ...etc. 
+
 38. Qu’est-ce que la hiérarchie visuelle en UI Design ?
+    - 
+
 39. Qu’est-ce que l’accessibilité en UX Design ?
+    - En UX design, l’accessibilité est le principe selon lequel l’application développée doit pouvoir être utilisée par le maximum de profils différents, en autre mots, être accessible à tout le monde. Cela consiste à prendre en compte la possibilité d’utilisation (accommodation 	aux handicaps, ...etc) mais aussi l’inclusivité aux profils marginalisés qui pourrait techniquement faire sans (pas impossible) mais qui se sentirais mal à l’aise (ex: prendre en compte les profils LGBTQ+ quand on réalise un formulaire d’inscription, si ces infos personnelles sont pertinentes bien entendu). 
+
 40. Qu’est-ce qu’une grille de mise en page ?
+    -
+
 41. Qu’est-ce que la notion d’affordance en UX Design ?
+    - 
+
 42. Qu’est-ce qu’un « mobile first design » ?
+    - Le design mobile first consiste à commencer le développement front par la version mobile, la plus compacte, et d’élargir le design responsive jusqu’à la version desktop. 
 
 ## Programmation orientée objet (POO)
 43. Donner une définition de la programmation orientée objet
+    - La programmation orientée objet (POO) est un type de programmation défini par une organisation du code en classes (concept du sujet traité) et objets (instances du sujet traité). 
+
 44. Qu’est-ce qu’une classe ? Comment la déclare-t-on ?
+    - Une classe correspond à la catégorie générale de l’objet que l’on va traiter dans le code, son « concept », qui prendra en attribut les différentes caractéristiques de tout objet de ce type. 
+
+    - Ex : Un objet Toyota sera de la classe Voiture, avec pour attribut $_marque. 
+
+    - Une classe est déclarée avec Class Nomclasse {} 
+
 45. Qu’est-ce qu’un objet ?
-46. Définir la notion de propriété / attribut / méthode
-47. Qu’est-ce que la visibilité d’une propriété ou d’une méthode ? Citer les différents types de visibilité
-48. Quelle est la méthode spécifique utilisée pour créer un nouvel objet à partir d’une classe ?
-49. Qu’est-ce que l’encapsulation ?
-50. Que signifie « étendre une classe » ? Quelle est le concept clé mis en œuvre ? Donner un exemple
-51. Définir l’opérateur de résolution de portée
-52. Définir une méthode / propriété statique
-53. Définir le polymorphisme en POO
-54. Définir une méthode / classe abstraite ?
-55. Définir le chaînage de méthodes
-56. Qu’est-ce que la méthode __toString() ? Existe-t-il d’autres méthodes « magiques » ?
-57. Qu’est-ce qu’un « autoload » ?
-58. Comment appelle-t-on en français les « getters » et les « setters » ?
-59. Qu’est-ce que la sérialisation en PHP ?
+    - Un objet sera quant à lui l’instance spécifique d’une classe, l’objet précis sur lequel on travaille. On le génère à partir de la classe selon la sythaxe suivante :  
+
+    - nomobjet= new Nomclasse(paramètres) ; 
+
+47. Définir la notion de propriété / attribut / méthode
+    - Une propriété correspond à une variable interne à une classe. 
+
+    - Attribut est synonyme de propriété, mais on préfère l’utiliser en référence aux propriétés que l’on crée manuellement pour une classe spécifique. 
+
+    - Une méthode correspond à une fonction appartenant à une classe, qui pourra être appliquée à n’importe quel objet de cette classe. 
+    
+48. Qu’est-ce que la visibilité d’une propriété ou d’une méthode ? Citer les différents types de visibilité
+    - les visibilités en POO sont :  
+
+    a. Public : disponible dans toutes les classes et objets. 
+
+    b. Private : disponible seulement dans la classe. 
+
+    c. Protected : disponible dans la classe et toute autre qui en hérite. 
+
+49. Quelle est la méthode spécifique utilisée pour créer un nouvel objet à partir d’une classe ?
+    - Il s’agit de la méthode magique __construct, que l’on appelle ainsi : 
+
+    - $objet = new classe(paramètres); 
+
+50. Qu’est-ce que l’encapsulation ?
+    - L’encapsulation est le principe de gestion de la visibilité des attributs et méthodes d’une classe. On mettra les attributs en private dans la majorité des cas, et on y accèdera via getter/setter si on veut les récupérer dans une autre classe. Les méthodes seront en public car on veut pouvoir les appeler partout dans le programme.
+
+51. Que signifie « étendre une classe » ? Quelle est le concept clé mis en œuvre ? Donner un exemple
+    - Etendre une classe emploie le concept d’héritage. Cela veut dire qu’on créer une hiérarchie de classe, entre une classe parent et une ou plusieurs classes filles. 
+
+52. Définir l’opérateur de résolution de portée
+    -
+
+53. Définir une méthode / propriété statique
+    -
+
+54. Définir le polymorphisme en POO
+    -
+
+55. Définir une méthode / classe abstraite ?
+    -
+
+56. Définir le chaînage de méthodes
+    - Le chaînage de méthodes correspond à appeler une méthode d'une classe parant dans une autre méthode d'une classe fille.
+
+57. Qu’est-ce que la méthode __toString() ? Existe-t-il d’autres méthodes « magiques » ?
+    - La méthode toString est une méthode magique qui permet d’établir un affichage basique pour les objets d’une classe, que l’on pourra appeler simplement avec $this. 
+
+58. Qu’est-ce qu’un « autoload » ?
+    - L’autoload est une méthode permettant d’établir l’accès permanant à un fichier, souvent une classe parent, afin de ne pas avoir à l’appeler plusieurs fois. 
+
+59. Comment appelle-t-on en français les « getters » et les « setters » ?
+    - Getter = accesseur 
+
+    - Setter = mutateur 
+
+60. Qu’est-ce que la sérialisation en PHP ?
+    - 
 
 ## Architecture 
 60. Qu’est-ce que l’architecture client / serveur ? Grâce à quel type de requête peut-on interroger le serveur. Définir l’acronyme de ce type de requête. Si on ajoute un « S » à cet acronyme, expliquer la différence
