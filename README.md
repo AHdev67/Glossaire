@@ -113,7 +113,6 @@
     - Il s’agit de la balise anchor, qui s’écrit <a href= “url”> texte auquel on applique le lien</a>.
 
 25. Qu’est-ce qu’une requête AJAX ?
-    - 
 
 26. Quel sélecteur CSS permet de sélectionner tous les éléments d’une classe spécifique ? D’un identifiant spécifique ?
     - Pour une classe, on utilise le selecteur ‘.’ 
@@ -126,7 +125,6 @@
     - Le templating consiste à créer un fichier php “squelette” qui contiendra la structure statique 	de la page affichée (header, footer, wrapper) dans laquelle on insèrera une variable content, qui sera récupérée dans les autres fichiers de l’appli web via output buffer. Finalement, le template est appelé dans ces autres fichier avec un require. 
 
 29. Qu’est-ce qu’une fonction anonyme en Javascript ?
-    - 
 
 30. Quelle méthode JavaScript est utilisée pour ajouter un élément à la fin d'un tableau ?
     - Il s’agit de la méthode Array.push(element).
@@ -156,16 +154,13 @@
     - Un prototype, ou mockup, est une maquette complète, simulant entièrement la présentation visuelle du site, que ce soit les plages de couleurs, les polices custom ...etc. 
 
 38. Qu’est-ce que la hiérarchie visuelle en UI Design ?
-    - 
 
 39. Qu’est-ce que l’accessibilité en UX Design ?
     - En UX design, l’accessibilité est le principe selon lequel l’application développée doit pouvoir être utilisée par le maximum de profils différents, en autre mots, être accessible à tout le monde. Cela consiste à prendre en compte la possibilité d’utilisation (accommodation 	aux handicaps, ...etc) mais aussi l’inclusivité aux profils marginalisés qui pourrait techniquement faire sans (pas impossible) mais qui se sentirais mal à l’aise (ex: prendre en compte les profils LGBTQ+ quand on réalise un formulaire d’inscription, si ces infos personnelles sont pertinentes bien entendu). 
 
 40. Qu’est-ce qu’une grille de mise en page ?
-    -
 
 41. Qu’est-ce que la notion d’affordance en UX Design ?
-    - 
 
 42. Qu’est-ce qu’un « mobile first design » ?
     - Le design mobile first consiste à commencer le développement front par la version mobile, la plus compacte, et d’élargir le design responsive jusqu’à la version desktop. 
@@ -214,16 +209,12 @@
     - Etendre une classe emploie le concept d’héritage. Cela veut dire qu’on créer une hiérarchie de classe, entre une classe parent et une ou plusieurs classes filles. 
 
 52. Définir l’opérateur de résolution de portée
-    -
 
 53. Définir une méthode / propriété statique
-    -
 
 54. Définir le polymorphisme en POO
-    -
 
 55. Définir une méthode / classe abstraite ?
-    -
 
 56. Définir le chaînage de méthodes
     - Le chaînage de méthodes correspond à appeler une méthode d'une classe parant dans une autre méthode d'une classe fille.
@@ -240,7 +231,6 @@
     - Setter = mutateur 
 
 60. Qu’est-ce que la sérialisation en PHP ?
-    - 
 
 ## Architecture 
 60. Qu’est-ce que l’architecture client / serveur ? Grâce à quel type de requête peut-on interroger le serveur. Définir l’acronyme de ce type de requête. Si on ajoute un « S » à cet acronyme, expliquer la différence
