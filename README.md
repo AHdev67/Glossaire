@@ -253,7 +253,9 @@
 
 63. **Quel est le rôle de chaque couche du design pattern MVC : Model, View, Controller ?**
 	- le modèle contient les données, ou plus souvent la methode de connexion à la bdd
+
 	- le controlleur contient toutes les instructions logiques liées au traitement des données
+
 	- la vue contient toutes les pages d'affichage du site
 
 64. **Quels sont les avantages de l’architecture MVC ?**
@@ -261,29 +263,39 @@
 
 65. **Existe-t-il des variantes à l’architecture MVC ?**
 	- Il existe les patrons MVP et MVVM :
-	- MVP diffère en remplacent le controlleur par la présentation, et change la dyamique avec la vue. La vue gère des évenements qu'elle transmet en traitement à la présentation.
-	- MVVM, ou modèle-vue vue-modèle instaure une communication bidirectionnelle entre la vue et le modèle.
+
+	a. MVP diffère en remplacent le controlleur par la présentation, et change la dyamique avec la vue. La vue gère des évenements qu'elle transmet en traitement à la présentation.
+
+	b. MVVM, ou modèle-vue vue-modèle instaure une communication bidirectionnelle entre la vue et le modèle.
 
 66. **Qu’est-ce qu’une API ? Définir l’architecture REST**
 	- Une API (application programming interface, ou interface de programmation) est un "programme" (entendre : ensemble de classes, méthodes, fonctions et constantes) qui à pour but d'offire un service à un autre programme.
+
 	- L'architecture REST (REpresentational State Transfer) est un ensemble de conventions (et pas réelement une tech en soi). Ses 5 règles sont : utiliser l'URI (passé dans l'URL) comme identifiant des ressources, utiliser les verbes HTTP (POST, GET) comme identifiant des operations, utiliser les réponses HTTP comme représentation des ressources, utiliser des liens comme relation entre ressources et utiliser un paramètre comme jeton d’authentification.
 
 ## Modélisation - Base de données
 67. **Qu’est-ce que la modélisation de données ? Définir la méthode Merise**
 	- La modélisation de donnée consiste à conceptualiser et schématiser les interactions des données d'une application théorique. Cela permet de prévoir l'architecture du projet.
+
 	- La mérhode Merise consiste à analyser le besoin des données, préparer et planifier les interactions des données et enfin réaliser l'architecture des données.
 
 68. **Quelles sont les 3 étapes principales de la méthode Merise ?**
     a.  Analyse, conception et réalisation
+
     b.  Planification, exécution et contrôle
+
     c.  Création, modification et suppression
 
 69. **Qu’est-ce qu’un modèle conceptuel de données (MCD) en Merise ?**
 	- Le MCD est un schéma concéptuel d'une base de données, qui représente des entités (tables) et leurs relations, sous la forme d'associations.
 	Ces associations sont également renseignées par des cardinalités, pouvant contenir les valeurs :
+
 	a. 0,1 : l'entité 1 peut être ou ne pas être reliée à l'entité 2.
+
 	b. 1,1 : l'entité 1 EST reliée à l'entité 2.
+
 	c. 0,n : l'entité 1 peut être ou ne pas être reliée à d'autres entités (multiples).
+
 	d. 1,n : l'entité 1 EST reliée à une ou plusieurs autres entités.
 
 71. **Qu’est-ce qu’un modèle logique de données (MLD) en Merise ?**
@@ -291,19 +303,24 @@
 
 72. **Donner la définition des mots suivants :**
 	a.  Entité : Il s'agit d'un acteur dans l'environnement de donnée que l'on concéptualise, par ex : dans le contexte d'un commerce, une entité principale sera le client.
+
 	b.  Relation : Il s'agit d'une interaction entre deux entités, par ex : un client qui rédige un avis sur un produit, aura une relation vers l'avis, qui lui même aura une relation 	vers le produit.
+
 	c.  Cardinalité : Il s'agit de la "direction" d'une relation : une cardinalité peut exprimmer que la relation est conditionnelle ou obligatoire, exclusive ou inclusive.
-	d.  Clé primaire / clé étrangère : une clé primaire fait réference à l'identitifant d'un enregistrement appartenant à une table, tandis qu'une clé étrangère fait réference à 		l'identifiant d'un autre enregistrement associé à un celui contenant la clé étrangère. 
+
+	d.  Clé primaire / clé étrangère : une clé primaire fait réference à l'identitifant d'un enregistrement appartenant à une table, tandis qu'une clé étrangère fait réference à l'identifiant d'un autre enregistrement associé à un celui contenant la clé étrangère. 
 
 73. **Que devient une relation de type « Many To Many » dans le modèle logique de données ?**
-	- Il devient une flèche bidirectionelle, qui renvoie aux deux entités en relation.
+	- Cela devient une flèche bidirectionelle, qui renvoie aux deux entités en relation.
 
 74. **Qu’est-ce qu’une base de données ?**
 	- Une base de donnée est un espace de stockage de donnée organisé et persistant (prévu au stockage à durée indéfinie) qui est séparé de l'application qui l'utilise (et est donc 	transportable) et prévu à une utilisation serverside.
 
 75. **Définir les notions suivantes :**
     a.  SQL : Structured Query Language, il s'agit du langage qui sert à écrire des instructions pour une bdd.
+
     b.  MySQL : C'est un système de gestion de base de données relationnelles (SGBDR) open source qui facilite la création de serveurs de bdd.
+
     c.  SGBD (donner 2 exemples de SGBD) : C'est un programme qui facilite l'adminitration d'une bdd, via une interface compréhensive. HeidiSQL et DBeaver en sont deux exemples.
 
 76. **Dans une base de données, les données sont stockées dans des ___. Celles-ci sont constituées de lignes appelées ___ et de colonnes appelées ___**
@@ -316,7 +333,6 @@
 	- Une jointure dans une requête SQL consiste à piocher des données dans une autre table selon des conditions spécifiques. Il existe le INNER JOIN, qui s'éffectue quand la condition est remplie dans les deux tables, le LEFT JOIN, qui s'éffectue lorsque les conditions sont remplies dans la table jointe, le RIGHT JOIN, qui fait l'inverse, et le FULL OUTER JOIN, qui s'éffectue quand les conditions sont remplies dans au moins une des deux tables.
 
 79. **A quoi sert une vue dans une base de données ?**
-	- 
 
 80. Qu’est-ce que l’intégrité référentielle dans une base de données ?
 81. Quelles sont les fonctions d’agrégation en SQL ?
