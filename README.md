@@ -280,6 +280,7 @@
 	- La mérhode Merise consiste à analyser le besoin des données, préparer et planifier les interactions des données et enfin réaliser l'architecture des données.
 
 68. **Quelles sont les 3 étapes principales de la méthode Merise ?**
+
     a.  Analyse, conception et réalisation
 
     b.  Planification, exécution et contrôle
