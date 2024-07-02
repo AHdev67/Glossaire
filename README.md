@@ -113,7 +113,7 @@
     - Il s’agit de la balise anchor, qui s’écrit <a href= “url”> texte auquel on applique le lien</a>.
 
 25. **Qu’est-ce qu’une requête AJAX ?**
-- Une requête AJAX est une insctruction qui appelle un document Xhtml et permet d'employer ses valeurs de façon asynchrone dans la page. C'est surtout utilisé avec le format JSON.
+	- Une requête AJAX est une insctruction qui appelle un document Xhtml et permet d'employer ses valeurs de façon asynchrone dans la page. C'est surtout utilisé avec le format JSON.
 
 26. **Quel sélecteur CSS permet de sélectionner tous les éléments d’une classe spécifique ? D’un identifiant spécifique ?**
     - Pour une classe, on utilise le selecteur ‘.’ 
@@ -281,10 +281,10 @@
 69. **Qu’est-ce qu’un modèle conceptuel de données (MCD) en Merise ?**
 	- Le MCD est un schéma concéptuel d'une base de données, qui représente des entités (tables) et leurs relations, sous la forme d'associations.
 	Ces associations sont également renseignées par des cardinalités, pouvant contenir les valeurs :
-    		- 0,1 : l'entité 1 peut être ou ne pas être reliée à l'entité 2.
-    		- 1,1 : l'entité 1 EST reliée à l'entité 2.
-    		- 0,n : l'entité 1 peut être ou ne pas être reliée à d'autres entités (multiples).
-    		- 1,n : l'entité 1 EST reliée à une ou plusieurs autres entités.
+	a. 0,1 : l'entité 1 peut être ou ne pas être reliée à l'entité 2.
+	b. 1,1 : l'entité 1 EST reliée à l'entité 2.
+	c. 0,n : l'entité 1 peut être ou ne pas être reliée à d'autres entités (multiples).
+	d. 1,n : l'entité 1 EST reliée à une ou plusieurs autres entités.
 
 71. **Qu’est-ce qu’un modèle logique de données (MLD) en Merise ?**
 	- Le MLD est un autres type de schéma de base de donnée, qui met de coté les associations, et à la place incorpore les valeurs associées directement dans les entités sous forme de clé étrangères, et illustre les cardinalités par des flèches entre les entités.
@@ -307,9 +307,17 @@
     c.  SGBD (donner 2 exemples de SGBD) : C'est un programme qui facilite l'adminitration d'une bdd, via une interface compréhensive. HeidiSQL et DBeaver en sont deux exemples.
 
 76. **Dans une base de données, les données sont stockées dans des ___. Celles-ci sont constituées de lignes appelées ___ et de colonnes appelées ___**
+	- Dans une base de données, les données sont stockées dans des tables. Celles-ci sont constituées de lignes appelées enregistrements et de colonnes appelées champs.
+
 77. **Quelle est la différence entre une base de données relationnelle et non relationnelle ?**
+	- La difference est dans le fait qu'une bdd relationnelle présentes des interactions et des dépendances entre ses tables, et une bdd non relationnelle possède des tables indépendantes et isolées.
+
 78. **Qu’est-ce qu’une jointure dans une base de données ? En existe-t-il plusieurs ? Si oui lesquelles ?**
+	- Une jointure dans une requête SQL consiste à piocher des données dans une autre table selon des conditions spécifiques. Il existe le INNER JOIN, qui s'éffectue quand la condition est remplie dans les deux tables, le LEFT JOIN, qui s'éffectue lorsque les conditions sont remplies dans la table jointe, le RIGHT JOIN, qui fait l'inverse, et le FULL OUTER JOIN, qui s'éffectue quand les conditions sont remplies dans au moins une des deux tables.
+
 79. **A quoi sert une vue dans une base de données ?**
+	- 
+
 80. Qu’est-ce que l’intégrité référentielle dans une base de données ?
 81. Quelles sont les fonctions d’agrégation en SQL ?
 82. Qu’est-ce qu’un CRUD dans le contexte d’une base de données ?
