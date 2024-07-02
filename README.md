@@ -113,6 +113,7 @@
     - Il s’agit de la balise anchor, qui s’écrit <a href= “url”> texte auquel on applique le lien</a>.
 
 25. **Qu’est-ce qu’une requête AJAX ?**
+- Une requête AJAX est une insctruction qui appelle un document Xhtml et permet d'employer ses valeurs de façon asynchrone dans la page. C'est surtout utilisé avec le format JSON.
 
 26. **Quel sélecteur CSS permet de sélectionner tous les éléments d’une classe spécifique ? D’un identifiant spécifique ?**
     - Pour une classe, on utilise le selecteur ‘.’ 
@@ -154,16 +155,16 @@
     - Un prototype, ou mockup, est une maquette complète, simulant entièrement la présentation visuelle du site, que ce soit les plages de couleurs, les polices custom ...etc. 
 
 38. **Qu’est-ce que la hiérarchie visuelle en UI Design ?**
-	-Il s'agit de l'odre de priorité visuelle attribué aux éléments de l'interface, par le biais de la taille, de la couleur ...etc.
+	- Il s'agit de l'odre de priorité visuelle attribué aux éléments de l'interface, par le biais de la taille, de la couleur ...etc.
 
 39. **Qu’est-ce que l’accessibilité en UX Design ?**
     - En UX design, l’accessibilité est le principe selon lequel l’application développée doit pouvoir être utilisée par le maximum de profils différents, en autre mots, être accessible à tout le monde. Cela consiste à prendre en compte la possibilité d’utilisation (accommodation 	aux handicaps, ...etc) mais aussi l’inclusivité aux profils marginalisés qui pourrait techniquement faire sans (pas impossible) mais qui se sentirais mal à l’aise (ex: prendre en compte les profils LGBTQ+ quand on réalise un formulaire d’inscription, si ces infos personnelles sont pertinentes bien entendu). 
 
 40. **Qu’est-ce qu’une grille de mise en page ?**
-	-Une grille de mise en page consiste à découper les éléments du design en blocs de tailles égales horizontalement, puis verticalement.
+	- Une grille de mise en page consiste à découper les éléments du design en blocs de tailles égales horizontalement, puis verticalement.
 
 41. **Qu’est-ce que la notion d’affordance en UX Design ?**
-	-Il s'agit de la capacité d'un objet à évoquer son utilisation, à guider l'utilisateur vers l'experience prévue.
+	- Il s'agit de la capacité d'un objet à évoquer son utilisation, à guider l'utilisateur vers l'experience prévue.
 
 42. **Qu’est-ce qu’un « mobile first design » ?**
     - Le design mobile first consiste à commencer le développement front par la version mobile, la plus compacte, et d’élargir le design responsive jusqu’à la version desktop. 
@@ -238,7 +239,7 @@
     - Setter = mutateur 
 
 60. **Qu’est-ce que la sérialisation en PHP ?**
-	-En PHP, la sérialisation consiste à convertir une valeur en une chaine de caractères qui représente la valeur de façon linéaire et ordonnée. C'est une méthode qui peut être appliquée pour n'importe quelle valeur stockable en PHP mais est surtout utile pour stocker et persister des objets.
+	- En PHP, la sérialisation consiste à convertir une valeur en une chaine de caractères qui représente la valeur de façon linéaire et ordonnée. C'est une méthode qui peut être appliquée pour n'importe quelle valeur stockable en PHP mais est surtout utile pour stocker et persister des objets.
 
 ## Architecture 
 60. **Qu’est-ce que l’architecture client / serveur ? Grâce à quel type de requête peut-on interroger le serveur. Définir l’acronyme de ce type de requête. Si on ajoute un « S » à cet acronyme, expliquer la différence**
@@ -269,8 +270,8 @@
 
 ## Modélisation - Base de données
 67. **Qu’est-ce que la modélisation de données ? Définir la méthode Merise**
-	-La modélisation de donnée consiste à conceptualiser et schématiser les interactions des données d'une application théorique. Cela permet de prévoir l'architecture du projet.
-	-La mérhode Merise consiste à analyser le besoin des données, préparer et planifier les interactions des données et enfin réaliser l'architecture des données.
+	- La modélisation de donnée consiste à conceptualiser et schématiser les interactions des données d'une application théorique. Cela permet de prévoir l'architecture du projet.
+	- La mérhode Merise consiste à analyser le besoin des données, préparer et planifier les interactions des données et enfin réaliser l'architecture des données.
 
 68. **Quelles sont les 3 étapes principales de la méthode Merise ?**
     a.  Analyse, conception et réalisation
@@ -278,15 +279,15 @@
     c.  Création, modification et suppression
 
 69. **Qu’est-ce qu’un modèle conceptuel de données (MCD) en Merise ?**
-	-Le MCD est un schéma concéptuel d'une base de données, qui représente des entités (tables) et leurs relations, sous la forme d'associations.
+	- Le MCD est un schéma concéptuel d'une base de données, qui représente des entités (tables) et leurs relations, sous la forme d'associations.
 	Ces associations sont également renseignées par des cardinalités, pouvant contenir les valeurs :
-    		-0,1 : l'entité 1 peut être ou ne pas être reliée à l'entité 2.
-    		-1,1 : l'entité 1 EST reliée à l'entité 2.
-    		-0,n : l'entité 1 peut être ou ne pas être reliée à d'autres entités (multiples).
-    		-1,n : l'entité 1 EST reliée à une ou plusieurs autres entités.
+    		- 0,1 : l'entité 1 peut être ou ne pas être reliée à l'entité 2.
+    		- 1,1 : l'entité 1 EST reliée à l'entité 2.
+    		- 0,n : l'entité 1 peut être ou ne pas être reliée à d'autres entités (multiples).
+    		- 1,n : l'entité 1 EST reliée à une ou plusieurs autres entités.
 
 71. **Qu’est-ce qu’un modèle logique de données (MLD) en Merise ?**
-	-Le MLD est un autres type de schéma de base de donnée, qui met de coté les associations, et à la place incorpore les valeurs associées directement dans les entités sous forme de clé 	étrangères, et illustre les cardinalités par des flèches entre les entités.
+	- Le MLD est un autres type de schéma de base de donnée, qui met de coté les associations, et à la place incorpore les valeurs associées directement dans les entités sous forme de clé étrangères, et illustre les cardinalités par des flèches entre les entités.
 
 72. **Donner la définition des mots suivants :**
 	a.  Entité : Il s'agit d'un acteur dans l'environnement de donnée que l'on concéptualise, par ex : dans le contexte d'un commerce, une entité principale sera le client.
@@ -295,10 +296,10 @@
 	d.  Clé primaire / clé étrangère : une clé primaire fait réference à l'identitifant d'un enregistrement appartenant à une table, tandis qu'une clé étrangère fait réference à 		l'identifiant d'un autre enregistrement associé à un celui contenant la clé étrangère. 
 
 73. **Que devient une relation de type « Many To Many » dans le modèle logique de données ?**
-	-Il devient une flèche bidirectionelle, qui renvoie aux deux entités en relation.
+	- Il devient une flèche bidirectionelle, qui renvoie aux deux entités en relation.
 
 74. **Qu’est-ce qu’une base de données ?**
-	-Une base de donnée est un espace de stockage de donnée organisé et persistant (prévu au stockage à durée indéfinie) qui est séparé de l'application qui l'utilise (et est donc 	transportable) et prévu à une utilisation serverside.
+	- Une base de donnée est un espace de stockage de donnée organisé et persistant (prévu au stockage à durée indéfinie) qui est séparé de l'application qui l'utilise (et est donc 	transportable) et prévu à une utilisation serverside.
 
 75. **Définir les notions suivantes :**
     a.  SQL : Structured Query Language, il s'agit du langage qui sert à écrire des instructions pour une bdd.
