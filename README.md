@@ -154,13 +154,16 @@
     - Un prototype, ou mockup, est une maquette complète, simulant entièrement la présentation visuelle du site, que ce soit les plages de couleurs, les polices custom ...etc. 
 
 38. **Qu’est-ce que la hiérarchie visuelle en UI Design ?**
+	-Il s'agit de l'odre de priorité visuelle attribué aux éléments de l'interface, par le biais de la taille, de la couleur ...etc.
 
 39. **Qu’est-ce que l’accessibilité en UX Design ?**
     - En UX design, l’accessibilité est le principe selon lequel l’application développée doit pouvoir être utilisée par le maximum de profils différents, en autre mots, être accessible à tout le monde. Cela consiste à prendre en compte la possibilité d’utilisation (accommodation 	aux handicaps, ...etc) mais aussi l’inclusivité aux profils marginalisés qui pourrait techniquement faire sans (pas impossible) mais qui se sentirais mal à l’aise (ex: prendre en compte les profils LGBTQ+ quand on réalise un formulaire d’inscription, si ces infos personnelles sont pertinentes bien entendu). 
 
 40. **Qu’est-ce qu’une grille de mise en page ?**
+	-Une grille de mise en page consiste à découper les éléments du design en blocs de tailles égales horizontalement, puis verticalement.
 
 41. **Qu’est-ce que la notion d’affordance en UX Design ?**
+	-Il s'agit de la capacité d'un objet à évoquer son utilisation, à guider l'utilisateur vers l'experience prévue.
 
 42. **Qu’est-ce qu’un « mobile first design » ?**
     - Le design mobile first consiste à commencer le développement front par la version mobile, la plus compacte, et d’élargir le design responsive jusqu’à la version desktop. 
@@ -235,6 +238,7 @@
     - Setter = mutateur 
 
 60. **Qu’est-ce que la sérialisation en PHP ?**
+	-En PHP, la sérialisation consiste à convertir une valeur en une chaine de caractères qui représente la valeur de façon linéaire et ordonnée. C'est une méthode qui peut être appliquée pour n'importe quelle valeur stockable en PHP mais est surtout utile pour stocker et persister des objets.
 
 ## Architecture 
 60. **Qu’est-ce que l’architecture client / serveur ? Grâce à quel type de requête peut-on interroger le serveur. Définir l’acronyme de ce type de requête. Si on ajoute un « S » à cet acronyme, expliquer la différence**
@@ -265,31 +269,50 @@
 
 ## Modélisation - Base de données
 67. **Qu’est-ce que la modélisation de données ? Définir la méthode Merise**
+	-La modélisation de donnée consiste à conceptualiser et schématiser les interactions des données d'une application théorique. Cela permet de prévoir l'architecture du projet.
+	-La mérhode Merise consiste à analyser le besoin des données, préparer et planifier les interactions des données et enfin réaliser l'architecture des données.
+
 68. **Quelles sont les 3 étapes principales de la méthode Merise ?**
     a.  Analyse, conception et réalisation
     b.  Planification, exécution et contrôle
     c.  Création, modification et suppression
+
 69. **Qu’est-ce qu’un modèle conceptuel de données (MCD) en Merise ?**
-70. **Qu’est-ce qu’un modèle logique de données (MLD) en Merise ?**
-71. **Donner la définition des mots suivants :**
-	a.  Entité
-	b.  Relation
-	c.  Cardinalité
-	d.  Clé primaire / clé étrangère
-72. **Que devient une relation de type « Many To Many » dans le modèle logique de données ?**
-73. **Qu’est-ce qu’une base de données ?**
-74. **Définir les notions suivantes :**
-    a.  SQL
-    b.  MySQL
-    c.  SGBD (donner 2 exemples de SGBD)
-75. **Dans une base de données, les données sont stockées dans des ___. Celles-ci sont constituées de lignes appelées ___ et de colonnes appelées ___**
-76. **Quelle est la différence entre une base de données relationnelle et non relationnelle ?**
-77. **Qu’est-ce qu’une jointure dans une base de données ? En existe-t-il plusieurs ? Si oui lesquelles ?**
-78. **A quoi sert une vue dans une base de données ?**
-79. Qu’est-ce que l’intégrité référentielle dans une base de données ?
-80. Quelles sont les fonctions d’agrégation en SQL ?
-81. Qu’est-ce qu’un CRUD dans le contexte d’une base de données ?
-82. Quelles sont les clauses qui permettent de :
+	-Le MCD est un schéma concéptuel d'une base de données, qui représente des entités (tables) et leurs relations, sous la forme d'associations.
+	Ces associations sont également renseignées par des cardinalités, pouvant contenir les valeurs :
+    		-0,1 : l'entité 1 peut être ou ne pas être reliée à l'entité 2.
+    		-1,1 : l'entité 1 EST reliée à l'entité 2.
+    		-0,n : l'entité 1 peut être ou ne pas être reliée à d'autres entités (multiples).
+    		-1,n : l'entité 1 EST reliée à une ou plusieurs autres entités.
+
+71. **Qu’est-ce qu’un modèle logique de données (MLD) en Merise ?**
+	-Le MLD est un autres type de schéma de base de donnée, qui met de coté les associations, et à la place incorpore les valeurs associées directement dans les entités sous forme de clé 	étrangères, et illustre les cardinalités par des flèches entre les entités.
+
+72. **Donner la définition des mots suivants :**
+	a.  Entité : Il s'agit d'un acteur dans l'environnement de donnée que l'on concéptualise, par ex : dans le contexte d'un commerce, une entité principale sera le client.
+	b.  Relation : Il s'agit d'une interaction entre deux entités, par ex : un client qui rédige un avis sur un produit, aura une relation vers l'avis, qui lui même aura une relation 	vers le produit.
+	c.  Cardinalité : Il s'agit de la "direction" d'une relation : une cardinalité peut exprimmer que la relation est conditionnelle ou obligatoire, exclusive ou inclusive.
+	d.  Clé primaire / clé étrangère : une clé primaire fait réference à l'identitifant d'un enregistrement appartenant à une table, tandis qu'une clé étrangère fait réference à 		l'identifiant d'un autre enregistrement associé à un celui contenant la clé étrangère. 
+
+73. **Que devient une relation de type « Many To Many » dans le modèle logique de données ?**
+	-Il devient une flèche bidirectionelle, qui renvoie aux deux entités en relation.
+
+74. **Qu’est-ce qu’une base de données ?**
+	-Une base de donnée est un espace de stockage de donnée organisé et persistant (prévu au stockage à durée indéfinie) qui est séparé de l'application qui l'utilise (et est donc 	transportable) et prévu à une utilisation serverside.
+
+75. **Définir les notions suivantes :**
+    a.  SQL : Structured Query Language, il s'agit du langage qui sert à écrire des instructions pour une bdd.
+    b.  MySQL : C'est un système de gestion de base de données relationnelles (SGBDR) open source qui facilite la création de serveurs de bdd.
+    c.  SGBD (donner 2 exemples de SGBD) : C'est un programme qui facilite l'adminitration d'une bdd, via une interface compréhensive. HeidiSQL et DBeaver en sont deux exemples.
+
+76. **Dans une base de données, les données sont stockées dans des ___. Celles-ci sont constituées de lignes appelées ___ et de colonnes appelées ___**
+77. **Quelle est la différence entre une base de données relationnelle et non relationnelle ?**
+78. **Qu’est-ce qu’une jointure dans une base de données ? En existe-t-il plusieurs ? Si oui lesquelles ?**
+79. **A quoi sert une vue dans une base de données ?**
+80. Qu’est-ce que l’intégrité référentielle dans une base de données ?
+81. Quelles sont les fonctions d’agrégation en SQL ?
+82. Qu’est-ce qu’un CRUD dans le contexte d’une base de données ?
+83. Quelles sont les clauses qui permettent de :
     a.  Insérer un nouvel enregistrement dans une table
     b.  Modifier un enregistrement dans une table
     c.  Supprimer un enregistrement dans une table
@@ -298,7 +321,7 @@
     f.  Trier les résultats d’une requête SELECT
     g.  Regrouper les résultats d'une requête SELECT en fonction d'une colonne spécifique
     h.  Concaténer 2 chaînes de caractères
-83. Comment se connecter à une base de données en PHP ? Quelle est la classe native utilisée ?
+84. Comment se connecter à une base de données en PHP ? Quelle est la classe native utilisée ?
 
 ## Symfony
 84. Qu’est-ce que Symfony ?
