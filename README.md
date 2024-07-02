@@ -302,6 +302,7 @@
 	- Le MLD est un autres type de schéma de base de donnée, qui met de coté les associations, et à la place incorpore les valeurs associées directement dans les entités sous forme de clé étrangères, et illustre les cardinalités par des flèches entre les entités.
 
 72. **Donner la définition des mots suivants :**
+
 	a.  Entité : Il s'agit d'un acteur dans l'environnement de donnée que l'on concéptualise, par ex : dans le contexte d'un commerce, une entité principale sera le client.
 
 	b.  Relation : Il s'agit d'une interaction entre deux entités, par ex : un client qui rédige un avis sur un produit, aura une relation vers l'avis, qui lui même aura une relation 	vers le produit.
@@ -317,6 +318,7 @@
 	- Une base de donnée est un espace de stockage de donnée organisé et persistant (prévu au stockage à durée indéfinie) qui est séparé de l'application qui l'utilise (et est donc 	transportable) et prévu à une utilisation serverside.
 
 75. **Définir les notions suivantes :**
+
     a.  SQL : Structured Query Language, il s'agit du langage qui sert à écrire des instructions pour une bdd.
 
     b.  MySQL : C'est un système de gestion de base de données relationnelles (SGBDR) open source qui facilite la création de serveurs de bdd.
